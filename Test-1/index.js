@@ -1,5 +1,8 @@
+document.getElementById("create").addEventListener('click', validateForm);
+document.getElementById("cancel").addEventListener('click', clearForm);
+
 function validateForm(e) {
-  e.preventDefault()
+  e.preventDefault();
   let allInputs = document.querySelectorAll(".input-field div input");
   let allImgs = document.querySelectorAll(".input-field div img");
 
@@ -43,8 +46,11 @@ function validateForm(e) {
 function clearForm(e) {
   e.preventDefault();
   let allmsg = document.querySelectorAll(".error-message");
+  document.forms["sign-up-form"]["sources"].style.borderColor = 'rgb(209, 207, 207)';
+  document.getElementById('sources-image').style.visibility = 'hidden';
   document.querySelectorAll(".input-field div input").forEach((item) => {
     item.value = "";
+    item.style.borderColor = 'rgb(209, 207, 207)';
   });
   document.querySelectorAll(".input-field div img").forEach((item, index) => {
     item.style.visibility = 'hidden';
