@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Sign up form</title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+  <div class="form">
+    <form action="#" name="sign-up-form">
+
+      <div id="select">
+        <label for="sources">Select your source</label>
+        <div>
+          <select name="sources">
+            <option value="">--Please choose an option--</option>
+            <option value="Google Cloud Storage">Google Cloud Storage</option>
+            <option value="aws">Amazon web Services</option>
+            <option value="Azure">Azure</option>
+          </select>
+          <img id="sources-image" src="images/icon-error.svg" alt="sources-image">
+        </div>
+      </div>
+
+      <div class="input-field">
+        <label for="pipename">Provide a name for pipeline</label>
+        <div>
+          <input type="text" name="pipename" placeholder="e.g., cust_shop_energy_gkateway001">
+          <img id="pipename-image" src="images/icon-error.svg" alt="pipename">
+          <p class="error-message"></p>
+        </div>
+      </div>
+
+      <div class="input-field">
+        <label for="projectname">GCS project name</label>
+        <div>
+          <input type="text" name="projectname" placeholder="project-id">
+          <img id="project-image" src="images/icon-error.svg" alt="">
+          <p class="error-message"></p>
+        </div>
+      </div>
+
+      <div class="input-field">
+        <label for="bucketname">GCS bucket name</label>
+        <div>
+          <input type="text" name="bucket" placeholder="gs://your-bucket">
+          <img id="bucket-image" src="images/icon-error.svg" alt="bucket">
+          <p class="error-message"></p>
+        </div>
+      </div>
+
+      <div class="input-field">
+        <label for="Cloudname">Input Cloud Storage File(s)</label>
+        <div>
+          <input type="text" name="Cloud" placeholder="GCS location of your files">
+          <img id="cloud-image" src="images/icon-error.svg" alt="Cloudname">
+          <p class="error-message"></p>
+        </div>
+      </div>
+
+      <div class="input-field">
+        <label for="credentialsname">GCS credentials</label>
+        <div>
+          <input type="text" name="credentials" placeholder="Example: gs://your-bucket/your-files/01.csv">
+          <img id="credentials-image" src="images/icon-error.svg" alt="credentials">
+          <p class="error-message"></p>
+        </div>
+      </div>
+
+      <div class="input-field">
+        <label for="Run Every">Run Every</label>
+        <div>
+          <input type="text" name="run" placeholder="(in minutes)">
+          <img id="run-image" src="images/icon-error.svg" alt="Run Every">
+          <p class="error-message"></p>
+        </div>
+      </div>
+
+      <button onclick="validateForm()">Create</button>
+      <button id="cancel" onclick="clearForm()">Cancel</button>
+    </form>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+
+</html>

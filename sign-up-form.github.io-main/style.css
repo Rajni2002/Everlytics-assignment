@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+/* - Mobile: 375px
+- Desktop: 1440px */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  /* Primary */
+
+  --Red: hsl(0, 100%, 74%);
+  --Green: hsl(154, 59%, 51%);
+
+  /* ### Accent */
+
+  --Blue: hsl(248, 32%, 49%);
+
+  /* ### Neutral */
+
+  --Dark-Blue: hsl(249, 10%, 26%);
+  --Grayish-Blue: hsl(246, 25%, 77%);
+
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+}
+
+body {
+  background: url(images/Taieri.png) no-repeat;
+  background-size: cover;
+  background-color: var(--Red);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  height: 150vh;
+}
+
+.form {
+  width: 55%;
+}
+
+.form form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem 2rem 2.5rem 2rem;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.input-field,
+#select {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+label {
+  color: black;
+  margin-top: 1.5rem;
+}
+
+.form form input,
+select {
+  width: 30rem;
+  margin: 0.75rem;
+  padding: 0.75rem;
+  border-radius: 5px;
+  border-style: none;
+  border: 1px solid rgb(209, 207, 207);
+  font-size: 1.01rem;
+  font-weight: 500;
+  font-family: inherit;
+}
+
+.form form input:focus {
+  outline: none;
+  border: 1px solid var(--Dark-Blue);
+}
+
+.form form p {
+  font-size: 10px;
+}
+
+.error-message {
+  color: red;
+  width: 100%;
+  text-align: end;
+  visibility: hidden;
+}
+
+.form form img {
+  right: 5rem;
+  visibility: hidden;
+}
+
+button {
+  font-family: inherit;
+  font-size: 1.25rem;
+  font-weight: bold;
+  width: 65%;
+  height: 3rem;
+  background-color: var(--Green);
+  border-radius: 5px;
+  color: white;
+  box-shadow: 0 5px rgb(214, 212, 212);
+  border: none;
+  margin-bottom: 2rem;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: hsla(154, 59%, 51%, 0.493);
+}
+
+button:active {
+  box-shadow: 0 0px rgb(214, 212, 212);
+  transform: translateY(4px);
+}
+
+#cancel {
+  background-color: rgb(246, 244, 244);
+  color: gray;
+}
+
+.form form p strong {
+  color: var(--Red);
+}
+
+@media (max-width: 900px) {
+  body {
+    background: url(images/Taieri.png) no-repeat;
+    background-size: cover;
+    background-color: var(--Red);
+    font-size: 0.9rem;
+  }
+
+  .form {
+    width: 90%;
+  }
+
+  .form form input,
+  select {
+    width: 22rem;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 360px) {
+  body {
+    font-size: 0.6rem;
+  }
+  .form {
+    width: 90%;
+  }
+
+  .form form input,
+  select {
+    width: 12rem;
+    font-size: 0.6rem;
+  }
+}
