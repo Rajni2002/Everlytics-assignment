@@ -31,7 +31,7 @@ html {
 body {
   background: url(images/Taieri.png) no-repeat;
   background-size: cover;
-  background-color: var(--Red);
+  background-color: var(--Grayish-Blue);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -135,8 +135,8 @@ button:active {
 @media (max-width: 900px) {
   body {
     background: url(images/Taieri.png) no-repeat;
+    background-color: var(--Grayish-Blue);
     background-size: cover;
-    background-color: var(--Red);
     font-size: 0.9rem;
   }
 
