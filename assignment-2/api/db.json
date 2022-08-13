@@ -1,0 +1,58 @@
+{
+  "obj": {
+    "thead": [
+      "machine_name",
+      "machine_id",
+      "current",
+      "voltage",
+      "power_factor",
+      "active_power",
+      "apparent_power",
+      "reactive_power",
+      "daily_energy",
+      "monthly_energy",
+      "yearly_energy",
+      "idle_daily",
+      "idle_monthly",
+      "idle_yearly"
+    ],
+    "entries": [
+      {
+        "data": [
+          "Auto Winding Machine",
+          "machine001",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ]
+      },
+      {
+        "data": [
+          "Boiler Machine",
+          "machine004",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ]
+      }
+    ]
+  }
+}

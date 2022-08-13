@@ -1,0 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+html {
+  font-family: "Poppins", sans-serif;
+}
+thead {
+  background-color: #febc8a;
+}
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
